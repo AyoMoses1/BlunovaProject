@@ -12,6 +12,10 @@ body{
 }
 
 
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* My Assets */
 h1{
     font-size: 72px;
@@ -31,6 +35,11 @@ a{
     font-size: 18px;
     text-decoration: none;
 }
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
 
 /* Special Class Utilities */
 .container{
@@ -58,12 +67,20 @@ div.section-header span{
 }
 
 
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
 /* Navigation Section */
 div.navbar{
     justify-content: space-between;
 }
 div.navbar .nav-links{
-    width: 50%;
+    width: 60%;
     list-style-type: none;
     justify-content: space-between;  
 }
@@ -80,6 +97,17 @@ div.navbar .nav-links li a:hover{
     background: red;
     transition: 0.8s;
 }
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
 
 
 /* Hero Section */
@@ -124,31 +152,6 @@ div.hero.active div a:hover{
    border-radius: 10px;
    transition: 2s;
 }
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-/* Hero Keyframes */
-@keyframes slide{
-    0%{
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes captionText{
-    0%{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 div.hero div{
     width: 50%;
 }
@@ -192,6 +195,11 @@ div.controls div.prev{
 div.controls div.next{
     right: 0;
 }
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
 /* About Section */
 div.about{
     padding: 50px 0;
@@ -212,6 +220,10 @@ div.about div.about-img{
     width: 40%;
 }
 
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* Services Section */
 div.services{
     background: rgb(3, 3, 75);
@@ -220,20 +232,24 @@ div.services{
     padding: 50px 0;
 }
 
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* Projects Section */
 div.project{
     padding: 50px 0;
 }
-div.project div.project-cards{
+div.project-cards{
     justify-content: space-between;
 }
-div.project div.project-cards div.project-card{
+div.project-cards div.project-card{
     margin-top: 30px;
     width: 30%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 1s;
 }
-div.project div.project-cards div.project-card:hover{
+div.project-cards div.project-card:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     transition: 2s;
 }
@@ -259,11 +275,20 @@ div.project-card a{
     color: red;
 }
 
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
 /* Footer Section */
 footer{
     background: rgb(3, 3, 75);
     color: #fff;
     padding: 50px 0;
+    position: relative;
 }
 div.footer-caption{
     justify-content: space-between;
@@ -326,3 +351,80 @@ div.footer-links span {
     margin-top: 20px;
     padding-right:30px ;
 }
+div.footer-copyright{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background: #fff;
+    height: 50px;
+}
+div.footer{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* KeyFrames Section */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Hero Keyframes */
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes captionText{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
